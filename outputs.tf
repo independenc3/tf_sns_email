@@ -4,7 +4,7 @@ output "arn" {
 }
 
 output "topic" {
-  value       = aws_cloudformation_stack.sns-topic.outputs["TOPIC_NAME"]
+  value       = aws_cloudformation_stack.sns-topic.outputs["TOPICNAME"]
   description = "Email SNS topic name"
 }
 
@@ -13,6 +13,6 @@ output "alert_arn" {
   description = "Email alert SNS topic ARN"
 }
 output "alert_topic" {
-  value       = aws_cloudformation_stack.sns-topic-alert.outputs["TOPIC_NAME"]
+  value       = aws_cloudformation_stack.sns-topic-alert.outputs["TOPICNAME"]
   description = "Email alert SNS topic name"
 }
