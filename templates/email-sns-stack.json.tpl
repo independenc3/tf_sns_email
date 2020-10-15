@@ -21,7 +21,7 @@
       "Description" : "Email SNS Topic ARN",
       "Value" : { "Ref" : "EmailSNSTopic" }
     },
-    "TopicName" : {
+    "TOPIC_NAME" : {
       "Description" : "Email SNS Topic Name",
       "Value" : { "Fn::GetAtt": ["EmailSNSTopic", "TopicName"] }
     }
